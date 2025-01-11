@@ -1,0 +1,154 @@
+/* Réinitialisation des marges et paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Facilite la gestion des dimensions */
+}
+
+/* Styles globaux pour le corps de la page */
+body {
+    font-family: 'Lato', sans-serif;
+    overflow: hidden; /* Empêche les barres de défilement */
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles de la navbar */
+.navbar {
+    display: flex; /* Utilisation de Flexbox pour la mise en page */
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Alignement vertical des éléments */
+    position: fixed; /* Fixe la navbar en haut de l'écran */
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur de l'écran */
+    padding: 0px 35px 0px 15px; /* Espacement interne */
+    background-color: transparent; /* Fond transparent */
+    transition: background-color 0.3s ease; /* Animation douce lors du changement de couleur */
+    z-index: 1000; /* S'assurer que la navbar est au-dessus des autres éléments */
+}
+
+/* Style de la navbar lorsque l'on a fait défiler la page */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.58); /* Gris transparent */
+}
+
+/* Contenu de la partie gauche (Logo et liens) */
+.nav-left {
+    display: flex;
+    align-items: center; /* Aligne le SVG et les liens verticalement */
+}
+
+.nav-left .logo-svg {
+    width: 50px; /* Ajustez la taille du logo */
+    height: auto; /* Garder la proportion du logo */
+}
+
+.nav-links {
+    display: flex; /* Affiche les liens sur une seule ligne */
+    list-style: none; /* Supprime les puces des éléments de liste */
+    margin-left: 30px; /* Espacement entre le SVG et les liens */
+}
+
+.nav-links li {
+    margin-left: 30px; /* Espacement entre les liens */
+}
+
+.nav-links a {
+    text-decoration: none; /* Supprime les soulignements */
+    color: white; /* Texte blanc */
+    font-weight: bold; /* Texte en gras */
+    font-size: 1.1rem; /* Taille de police */
+    transition: opacity 0.3s ease; /* Effet de transition pour le survol */
+}
+
+.nav-links a:hover {
+    opacity: 0.7; /* Ajoute un léger effet au survol */
+}
+
+a svg {
+    transition: opacity 0.3s ease; /* Effet de transition pour le survol */
+}
+
+a svg:hover {
+    opacity: 0.7; /* Ajoute un léger effet au survol */
+}
+
+/* Espace avec les deux SVG et le texte à droite */
+.info {
+    display: flex;
+    align-items: center;
+}
+
+/* Section avec le SVG et le texte à gauche */
+.weather-left,
+.weather-right {
+    display: flex; /* Utilise flexbox pour aligner le SVG et le texte */
+    align-items: center;
+    margin-left: 20px; /* Espacement entre les sections */
+}
+
+.weather-left .map-svg,
+.weather-right .weather-svg {
+    width: 50px; /* Taille des SVGs */
+    height: 50px; /* Taille des SVGs */
+}
+
+.text-left, .text-right {
+    margin-left: 10px; /* Espacement entre le SVG et le texte */
+    text-align: center; /* Aligner le texte au centre */
+    color: white;
+}
+
+.text-left p, .text-right p {
+    margin: 0; /* Supprime la marge des paragraphes */
+    font-size: 1rem; /* Taille de la police du texte */
+}
+
+/* Styles pour rendre les éléments cliquables */
+.weather-left, .weather-right {
+    cursor: pointer; /* Affiche un curseur de main pour indiquer que c'est cliquable */
+    transition: opacity 0.3s ease; /* Effet de transition pour le survol */
+}
+
+a {
+    text-decoration: none;
+}
+
+.weather-left:hover, .weather-right:hover {
+    opacity: 0.7; /* Ajoute un léger effet au survol */
+}
+
+.weather-left a, .weather-right a {
+    text-decoration: none; /* Supprime la décoration du lien */
+    color: white; /* Garde le texte en blanc */
+}
+
+/* Conteneur principal des sections */
+.sections {
+    height: 100vh; /* Hauteur de la fenêtre pour chaque section */
+    overflow: hidden; /* Pas de barre de défilement */
+}
+
+/* Styles communs à chaque section */
+.section {
+    width: 100vw; /* Pleine largeur de la fenêtre */
+    height: 100vh; /* Pleine hauteur de la fenêtre */
+    background-size: cover; /* Les images de fond couvrent tout l'espace */
+    background-position: center; /* Les images sont centrées */
+}
+
+/* Style pour la dernière section (#section6) */
+#section6 {
+    background-image: none; /* Pas d'image en fond */
+    background-color: white; /* Fond blanc */
+    display: flex; /* Flexbox pour centrer le contenu */
+    align-items: center; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+    color: black; /* Texte noir */
+    font-size: 1.5rem; /* Taille de police du texte */
+    text-align: center; /* Alignement du texte au centre */
+}

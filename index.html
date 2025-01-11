@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office de Tourisme des Pyrénées Audoises</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Lien vers le fichier CSS pour le style -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar avec fond transparent et texte en blanc -->
+    <nav class="navbar">
+        <!-- Contenu de la partie gauche (Logo + Navigation) -->
+        <div class="nav-left">
+            <a href="#top">
+                <!-- SVG du logo à gauche -->
+                <svg width="145" height="130" viewBox="0 0 145 130" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect x="0.0126343" width="144.227" height="130" fill="url(#pattern0_4_127)"/>
+                    <defs>
+                    <pattern id="pattern0_4_127" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_4_127" transform="matrix(0.00694444 0 0 0.00770443 0 -0.000788212)"/>
+                    </pattern>
+                    <image id="image0_4_127" width="144" height="130" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                </svg>
+            </a>
+                
+
+            <!-- Menu de navigation -->
+            <ul class="nav-links">
+                <li><a href="#section2" data-target="1"><h2>JE DECOUVRE</h2></a></li>
+                <li><a href="#section3" data-target="2"><h2>EN MODE ADREALINE</h2></a></li>
+                <li><a href="#section4" data-target="3"><h2>EN MODE ZEN</h2></a></li>
+                <li><a href="#section5" data-target="4"><h2>JE M'ORGANISE</h2></a></li>
+                <li><a href="#section6" data-target="5"><h2>AGENDA</h2></a></li>
+            </ul>
+        </div>
+
+        <!-- Espace avec deux SVG et texte (à droite) -->
+        <div class="info">
+            <!-- Section avec texte et SVG à gauche -->
+            <a href="#location" class="weather-left"> <!-- Ajout d'un lien autour de la localisation -->
+                <svg class="map-svg" width="49" height="44" viewBox="0 0 49 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5444 34L2.52234 42V10L16.5444 2M16.5444 34L32.5696 42M16.5444 34V2M32.5696 42L46.5917 34V2L32.5696 10M32.5696 42V10M32.5696 10L16.5444 2" stroke="#F3F3F3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+                <div class="text-left">
+                    <p>PYRENEES</p>
+                    <p>AUDOISES</p>
+                </div>
+            </a>
+
+            <!-- Section avec texte et SVG à droite -->
+            <a href="#meteo" class="weather-right"> <!-- Ajout d'un lien autour de la météo -->
+                <svg class="weather-svg" width="49" height="36" viewBox="0 0 49 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.0568 14H33.5328C32.7834 11.102 31.2348 8.47198 29.0631 6.40879C26.8913 4.3456 24.1835 2.93198 21.2473 2.32855C18.3111 1.72512 15.2642 1.95608 12.4529 2.99518C9.64162 4.03429 7.1786 5.83987 5.34373 8.20676C3.50887 10.5737 2.37574 13.407 2.07309 16.3847C1.77045 19.3625 2.31043 22.3653 3.63168 25.0519C4.95293 27.7386 7.00247 30.0014 9.54741 31.5831C12.0923 33.1649 15.0306 34.0022 18.0284 34H36.0568C38.7131 34 41.2607 32.9464 43.139 31.0711C45.0173 29.1957 46.0725 26.6522 46.0725 24C46.0725 21.3478 45.0173 18.8043 43.139 16.9289C41.2607 15.0536 38.7131 14 36.0568 14Z" stroke="#F3F3F3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+                <div class="text-right">
+                    <p>13°C</p>
+                    <p>8°C</p>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Conteneur principal pour toutes les sections -->
+    <div class="sections">
+        <!-- Chaque section représente une "diapositive" pleine page avec une image en fond -->
+        <section id="section1" class="section" style="background-image: url('images/background.gif');"></section>
+        <section id="section2" class="section" style="background-image: url('images/section2.png');"></section>
+        <section id="section3" class="section" style="background-image: url('images/section3.png');"></section>
+        <section id="section4" class="section" style="background-image: url('images/section4.png');"></section>
+        <section id="section5" class="section" style="background-image: url('images/section5.png');"></section>
+        <!-- Dernière section avec un fond blanc et du contenu centré -->
+        <section id="section6" class="section"></section>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
